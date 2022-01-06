@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: #373737;
+  width: 40%;
+  height: 45%;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+.calc {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+input {
+  text-align: center;
+  margin: 3px;
+  border-radius: 10px;
+  font-family: "Righteous", cursive;
+  font-size: 24px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.text {
+  grid-column: 1/5;
+  text-align: end;
+  background-color: #fff;
+  letter-spacing: 2px;
+}
+.btnOp {
+  grid-column: 4/5;
+  background-color: rgb(14, 253, 241);
+}
+
+.btnOp:hover {
+  background-color: rgb(17, 197, 149);
+}
+.btnNum:hover {
+  background-color: rgb(199, 193, 193);
+}
+.clear {
+  grid-column: 3/4;
+  background-color: rgb(44, 235, 5);
+}
+.clear:hover {
+  background-color: rgb(255, 0, 0);
+}
+.zero {
+  grid-column: 2/3;
+}
